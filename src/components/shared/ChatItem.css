@@ -1,0 +1,40 @@
+.chat-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  background-color: unset;
+  color: black;
+  border-radius: 0.25rem; /* Optional: for rounded corners */
+}
+
+.chat-item.same-sender {
+  background-color: black;
+  color: white;
+}
+
+.chat-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-item-name {
+  font-size: 1rem;
+}
+
+.chat-item-alert {
+  font-size: 0.875rem;
+  color: gray; /* Optional: to distinguish alert text */
+}
+
+.online-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}

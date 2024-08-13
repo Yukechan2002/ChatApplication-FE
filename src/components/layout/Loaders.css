@@ -1,0 +1,28 @@
+/* Loaders.css */
+
+.layout-loader {
+  height: calc(100vh - 4rem);
+}
+
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.rectangular {
+  width: 100%;
+}
+
+.skeleton-full {
+  height: 100%;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-item {
+  height: 5rem;
+  margin-bottom: 1rem;
+}

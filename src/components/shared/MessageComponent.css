@@ -1,0 +1,51 @@
+.message-component {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  max-width:40%;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-component.align-self-end {
+  align-self: flex-end;
+  margin-left: auto;
+  background-color: #e6f7ff; /* Light blue background for sender */
+}
+
+.message-component.align-self-start {
+  align-self: flex-start;
+  margin-right: auto;
+  background-color: #f8f9fa; /* Light gray background for receiver */
+}
+
+.sender-name {
+  color: #17a2b8; /* Equivalent to lightBlue */
+  margin-bottom: 0.25rem;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+
+.text-dark {
+  color: black !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.message-content {
+  margin-bottom: 0.25rem;
+}
+
+.attachment {
+  margin-bottom: 0.25rem;
+  align-items: center;
+}

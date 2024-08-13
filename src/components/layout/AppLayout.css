@@ -1,0 +1,27 @@
+/* Profile container in AppLayout */
+.profile-containerlay {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-containerlay .profile-container {
+  max-width: 300px; /* Limit the profile container width */
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-containerlay {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-containerlay {
+    padding: 0.25rem;
+  }
+}

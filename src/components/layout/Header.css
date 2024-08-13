@@ -1,0 +1,28 @@
+.navbar.bg-orange {
+  background-color: rgb(26, 126, 241);
+}
+
+.text-white {
+  color: white !important;
+}
+
+button.nav-link {
+  border: none;
+  background: none;
+  margin-right: 15px; /* Add space between icons */
+}
+
+button.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button.nav-link:hover {
+  color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* Add space between icons */
+}

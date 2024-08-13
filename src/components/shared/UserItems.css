@@ -1,0 +1,40 @@
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make it circular */
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-action-btn {
+  background-color: var(--bs-primary); /* Bootstrap primary color */
+  color: white;
+}
+
+.user-action-btn:disabled {
+  background-color: var(--bs-secondary); /* Adjust if needed */
+}

@@ -1,0 +1,13 @@
+/* ChatList.css */
+
+.chat-list {
+  overflow-y: auto;
+  height: 100%;
+  background-color: black;
+}
+
+.chat-list .list-group-item {
+  border: none;
+  padding: 0;
+  background-color: blue;
+}
