@@ -1,0 +1,42 @@
+.avatar-group {
+  display: flex;
+  flex-direction: row;
+  gap: 4px; /* Bootstrap's gap utility class equivalent */
+}
+
+.avatar-container {
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.avatar.shifted {
+  left: calc(48px * var(--avatar-index));
+}
+
+.avatar-container .avatar:nth-child(1) {
+  --avatar-index: 0;
+}
+
+.avatar-container .avatar:nth-child(2) {
+  --avatar-index: 1;
+}
+
+.avatar-container .avatar:nth-child(3) {
+  --avatar-index: 2;
+}
+
+.avatar-container .avatar:nth-child(4) {
+  --avatar-index: 3;
+}
