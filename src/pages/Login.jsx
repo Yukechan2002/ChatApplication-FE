@@ -1,15 +1,14 @@
-import React, { useState } from "react";
 import { useInputValidation } from "6pp";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import "./Login.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { server } from "../constants/config";
 import { userExists } from "../redux/reducer/auth";
-import Footer from "../components/layout/Footer";
+import "./Login.css";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -69,9 +68,9 @@ const Login = () => {
             <h2>Login</h2>
             <form onSubmit={handleLogin}>
               <div className="mb-3 position-relative">
-                <label htmlFor="username">Username</label>
+                <label htmlFor="username">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   id="username"
                   className="form-control"
                   value={username.value}

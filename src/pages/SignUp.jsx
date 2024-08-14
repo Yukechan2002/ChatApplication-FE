@@ -72,8 +72,8 @@ const SignUp = () => {
     username: Yup.string()
       .required("Username is required")
       .matches(
-        /^[a-zA-Z0-9_-]+$/,
-        "Only alphanumeric characters, underscores, and dashes are allowed"
+        /^[a-zA-Z0-9@.]+$/,
+        "Only alphanumeric characters,  and numbers are allowed"
       ),
     bio: Yup.string().required("Bio is required"),
     password: Yup.string()
@@ -184,10 +184,10 @@ const SignUp = () => {
                     <div className="col-md-6">
                       <div className="form-group mb-3">
                         <label htmlFor="username">
-                          Username<span className="span-clr">*</span>
+                        Email<span className="span-clr">*</span>
                         </label>
                         <Field
-                          type="text"
+                          type="email"
                           id="username"
                           name="username"
                           className="form-control"

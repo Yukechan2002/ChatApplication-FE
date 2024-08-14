@@ -95,7 +95,7 @@ const Profile = ({ user: initialUser }) => {
         Icon={<FontAwesomeIcon icon={faUser} />}
       />
       <ProfileCard
-        heading="Username"
+        heading="Email"
         text={user?.username}
         Icon={<FontAwesomeIcon icon={faEnvelope} />}
       />
@@ -148,7 +148,7 @@ const Profile = ({ user: initialUser }) => {
               />
             </Form.Group>
             <Form.Group controlId="formUsername">
-              <Form.Label>Username</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control
                 type="text"
                 name="username"
