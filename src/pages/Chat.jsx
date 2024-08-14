@@ -152,8 +152,8 @@ const Chat = ({ chatId, user }) => {
 
   const alertListener = useCallback(
     (data) => {
-      console.log("funny");
-      console.log("Alert received:", data); // Debugging log
+     
+      
       if (data.chatId !== chatId) return;
       const messageForAlert = {
         content: data.message,
