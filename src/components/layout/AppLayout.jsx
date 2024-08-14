@@ -137,7 +137,7 @@ const AppLayout = () => (WrappedComponent) => {
             </div>
           </div>
         </div>
-        <Footer />
+       
       </div>
     );
   };

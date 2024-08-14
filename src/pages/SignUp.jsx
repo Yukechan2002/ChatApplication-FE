@@ -12,12 +12,15 @@ import {
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import "./SignUp.css";
+import Footer from "../components/layout/Footer";
+
 const capitalizeWords = (text) => {
   return text
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
 };
+
 const SignUp = () => {
   const navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -46,8 +49,8 @@ const SignUp = () => {
         formData,
         config
       );
-      navigate("/login");
       toast.success(data.message, { id: toastId });
+      navigate("/login");
     } catch (error) {
       toast.error(error?.response?.data?.message || "Something Went Wrong", {
         id: toastId,
@@ -65,9 +68,7 @@ const SignUp = () => {
         "Only one file is allowed",
         (value) => value && value.size <= 1 * 1024 * 1024
       ),
-    name: Yup.string()
-      .required("Name is required"),  
-      
+    name: Yup.string().required("Name is required"),
     username: Yup.string()
       .required("Username is required")
       .matches(
@@ -88,10 +89,11 @@ const SignUp = () => {
   });
 
   return (
-    <div className="container my-5">
+    <div className="container">
       <div className="row">
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <div>
+            <h2 className="app-description text-center">Sign Up</h2>
             <h2 className="app-description">Join Dhee Chat</h2>
             <p className="app-tagline">
               Create, Connect, Collaborate, Celebrate
@@ -100,7 +102,6 @@ const SignUp = () => {
         </div>
         <div className="col-md-6">
           <div className="registration-card">
-            <h2 className="text-center">Sign Up</h2>
             <Formik
               initialValues={{
                 avatar: null,
@@ -159,39 +160,46 @@ const SignUp = () => {
                       className="error-text"
                     />
                   </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="name">
-                      Name<span className="span-clr">*</span>
-                    </label>
-                    <Field
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="form-control"
-                      autoComplete="name"
-                    />
-                    <ErrorMessage
-                      name="name"
-                      component="div"
-                      className="error-text"
-                    />
-                  </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="username">
-                      Username<span className="span-clr">*</span>
-                    </label>
-                    <Field
-                      type="text"
-                      id="username"
-                      name="username"
-                      className="form-control"
-                      autoComplete="username"
-                    />
-                    <ErrorMessage
-                      name="username"
-                      component="div"
-                      className="error-text"
-                    />
+                  {/* Name and Username fields side by side */}
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group mb-3">
+                        <label htmlFor="name">
+                          Name<span className="span-clr">*</span>
+                        </label>
+                        <Field
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          autoComplete="name"
+                        />
+                        <ErrorMessage
+                          name="name"
+                          component="div"
+                          className="error-text"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group mb-3">
+                        <label htmlFor="username">
+                          Username<span className="span-clr">*</span>
+                        </label>
+                        <Field
+                          type="text"
+                          id="username"
+                          name="username"
+                          className="form-control"
+                          autoComplete="username"
+                        />
+                        <ErrorMessage
+                          name="username"
+                          component="div"
+                          className="error-text"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div className="form-group mb-3">
                     <label htmlFor="bio">

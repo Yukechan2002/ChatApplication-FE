@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { server } from "../constants/config";
 import { userExists } from "../redux/reducer/auth";
+import Footer from "../components/layout/Footer";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -116,6 +117,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
