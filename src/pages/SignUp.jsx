@@ -65,8 +65,8 @@ const SignUp = () => {
       .required("Avatar is required")
       .test(
         "fileSize",
-        "Only one file is allowed",
-        (value) => value && value.size <= 1 * 1024 * 1024
+        "Only one file is allowed & less than 5 MB",
+        (value) => value && value.size <= 5 * 1024 * 1024
       ),
     name: Yup.string().required("Name is required"),
     username: Yup.string()
