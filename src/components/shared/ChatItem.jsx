@@ -12,11 +12,11 @@ const ChatItem = ({
   isOnline,
   newMessageAlert,
   index = 0,
-  handleDeletedChat,
+  handleDeleteChat,
 }) => {
   const onContextMenuHandler = (e) => {
     e.preventDefault(); // Prevent the default context menu
-    handleDeletedChat(e, _id, groupChat); // Call the custom context menu handler
+    handleDeleteChat(e, _id, groupChat); // Call the custom context menu handler
   };
 
   return (

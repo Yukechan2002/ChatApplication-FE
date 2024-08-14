@@ -24,7 +24,7 @@ const Link = (props) => {
   const linkStyle = {
     textDecoration: "none",
     color: "black",
-    padding: "1rem",
+    padding: "4px",
   };
 
   const hoverStyle = {

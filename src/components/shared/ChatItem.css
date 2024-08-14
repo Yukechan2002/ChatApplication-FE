@@ -2,7 +2,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 1rem;
+  padding: 5px;
   position: relative;
   background-color: unset;
   color: black;
@@ -32,7 +32,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: green;
+  background-color: rgb(11, 241, 11);
   position: absolute;
   top: 50%;
   right: 1rem;
