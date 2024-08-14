@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import ChatItems from "../shared/ChatItems";
+import ChatItem from "../shared/ChatItem"
 
 const ChatList = ({
   w = "100%",
@@ -29,7 +29,7 @@ const ChatList = ({
         );
 
         return (
-          <ChatItems
+          <ChatItem
             index={index}
             newMessageAlert={newMessageAlert}
             isOnline={isOnline}
