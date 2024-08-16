@@ -66,6 +66,12 @@ The home page is divided into three main sections:
 
    ![Friends List](./public/chatlistnotifi.png)
 
+  
+   - Delete Chat and leave group.
+
+   ![Chat Options](./public/Delete%20Chat.png)
+
+   ![Group  Options](./public/Leave%20Group.png)
 2. **Chat Area:**
    - Type and send messages.
    - Share multimedia files with friends.
