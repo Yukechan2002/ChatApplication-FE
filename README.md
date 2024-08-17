@@ -1,6 +1,9 @@
 # Welcome to Dheechat!
 
-This guide will help you get started with using Dheechat. Follow these instructions to navigate through our application.
+This guide will help you get started with using Dheechat. Follow these instructions to navigate through our application.  
+
+#### Disclaimer:
+Since the application is in development stage you may face some issues at some point of time. Please **refresh the page**, It may resolve the issue.
 
 ## 1. Getting Started
 
