@@ -109,14 +109,17 @@ const Login = () => {
                 Login
               </button>
               <div className="separator">OR</div>
-              <Link to="/signup" className="btn btn-link " disabled={isLoading}>
+              <Link
+                to="/signup"
+                className="btn btn-primary btn-block"
+                disabled={isLoading}
+              >
                 Sign Up Instead
               </Link>
             </form>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

@@ -182,7 +182,7 @@ const Chat = ({ chatId, user }) => {
   useErrors(errors);
 
   const allMessages = [...oldMessages, ...messages];
-
+console.log(allMessages)
   return chatDetails.isLoading ? (
     <Skeleton />
   ) : (

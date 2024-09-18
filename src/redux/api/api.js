@@ -14,6 +14,7 @@ const api = createApi({
       }),
       providesTags: ["Chat"],
     }),
+
     searchUser: builder.query({
       query: (name) => ({
         url: `user/search?name=${name}`,
@@ -21,6 +22,7 @@ const api = createApi({
       }),
       providesTags: ["User"],
     }),
+
     sendFriendRequest: builder.mutation({
       query: (data) => ({
         url: "user/sendrequest",
@@ -38,6 +40,7 @@ const api = createApi({
       }),
       keepUnusedDataFor: 0,
     }),
+
     acceptFriendRequest: builder.mutation({
       query: (data) => ({
         url: "user/acceptrequest",
@@ -77,6 +80,7 @@ const api = createApi({
         body: data,
       }),
     }),
+
     myGroups: builder.query({
       query: () => ({
         url: "chat/my/groups",
@@ -84,6 +88,7 @@ const api = createApi({
       }),
       providesTags: ["Chat"],
     }),
+
     availableFriends: builder.query({
       query: (chatId) => {
         let url = `user/friends`;
@@ -156,6 +161,7 @@ const api = createApi({
     }),
   }),
 });
+
 export default api;
 export const {
   useMyChatsQuery,
